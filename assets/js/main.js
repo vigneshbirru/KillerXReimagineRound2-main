@@ -23,54 +23,7 @@ if(navClose){
   })
 }
 
-/*=============== SHOW CART ===============*/
-const cart = document.getElementById('cart'),
-      cartShop = document.getElementById('cart-shop'),
-      cartClose = document.getElementById('cart-close')
 
-/*===== CART SHOW =====*/
-/* Validate if constant exists */
-if(cartShop){
-  cartShop.addEventListener("click",()=>{
-    cart.classList.add('show-cart')
-    // console.log("hello");
-  })
-}
-
-
-/*===== CART HIDDEN =====*/
-/* Validate if constant exists */
-if(cartClose){
-  cartClose.addEventListener("click",()=>{
-    cart.classList.remove('show-cart')
-    // console.log("hello");
-  })
-}
-
-/*=============== SHOW LOGIN ===============*/
-const login = document.getElementById('login'),
-      loginButton= document.getElementById('login-button'),
-      loginClose = document.getElementById('login-close')
-
-
-/*===== LOGIN SHOW =====*/
-/* Validate if constant exists */
-if(loginButton){
-  loginButton.addEventListener("click",()=>{
-    login.classList.add('show-login')
-    // console.log("hello");
-  })
-}
-
-/*===== LOGIN HIDDEN =====*/
-/* Validate if constant exists */
-
-if(loginClose){
-  loginClose.addEventListener("click",()=>{
-    login.classList.remove('show-login')
-    // console.log("hello");
-  })
-}
 
 /*=============== HOME SWIPER ===============*/
 
