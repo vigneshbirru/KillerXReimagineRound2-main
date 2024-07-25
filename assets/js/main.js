@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
           landing__descripton: 'Experience the intense heat and vibrant color of our Fiery Red Chilli Powder. Sourced from the finest red chillies, it adds a spicy kick to any dish while offering natural vitamins and antioxidants.'
       },
       'original': {
-          src1: 'assets/bgremove/coriander.png',
+          src1: 'assets/bgremove/coriander.png',  
           src2: 'assets/bgremove/coriander.png',
           foodSrc: 'assets/bgremove/coril.png',
           foodSrc2: 'assets/bgremove/dhan.png',
