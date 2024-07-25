@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/colors/color-1.css">
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.3/build/spline-viewer.js"></script>
+    <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/VDcnBWk4wX7EqoWW/scene.splinecode"></spline-viewer>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <title>Responsive e-commerce website - Crypticalcoder</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/bgremove/logozoff.png" class="logo" alt="">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link ">Shop</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link ">Blog</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link ">Faq's</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__link ">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+            <div class="nav__btns">
+                <div class="login__toggle" id="login-button">
+                    <i class="bx bx-user"></i>
+                </div>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+
+         <!--=============== DISCOUNT ===============-->
+         <section class="landing_page">
+            <div class="containerlanding">
+                    <div class="text-content">
+                        <div class="landing__data">
+                            <h1 id="landing__title">Pure and <br> Potent<br> Spice.</h1>
+                            <h3 id="landing__subtitle">#1 Organic Turmeric Powder</h3>
+                            <P id="landing__descripton">Discover the rich, vibrant flavor and numerous health
+                                benefits of our Premium Turmeric Powder.
+                                Sourced from the finest turmeric roots, our powder is meticulously processed to
+                                retain its natural goodness and potency.</P>
+
+
+                            <div class="landing__button">
+                                <a href="#" class="button">Buy Now</a>
+                            </div>
+                        </div>
+                        <!-- <p id="flavor-text">Turmeric Powder is one of the staple spice blends in Indian recipes. It is a
+                            spice enriched with strong flavour and healing properties, having a curcumin percentage of
+                            up to 3%, that gives a distinct flavour and colour to all your dry and curry-based preparations.
+                        </p> -->
+                    </div>
+                    <div class="image-content">
+                        <div class="background-shape"></div>
+                        <div class="chips-container">
+                            <img id="chips-image-1" src="assets/bgremove/TURMURIC_POWDER.png" alt="Turmeric Powder" class="floating">
+                            <img id="chips-image-2"src="assets/bgremove/TURMURIC_POWDER.png" alt="Turmeric Powder" class="floating">
+                            <img id="food-element" src="assets/bgremove/TUR.png" alt="Food Element" class="floating">
+                            <img id="food-element-2"
+                                src="https://static.vecteezy.com/system/resources/previews/026/756/627/original/turmeric-powder-spread-yellow-ai-generative-free-png.png"
+                                alt="Food Element 2" class="floating">
+                            <img id="food-element-3"  src="assets/bgremove/TUR.png"  alt="Food Element 3" class="floating">
+                        </div>
+                        <div class="options">
+                            <button data-flavor="sour-cream" data-text="Sour Cream, Onion & Parsley" class="selected"
+                                style="border-color: yellow;"><img src="assets/bgremove/haldi.png" alt=""></button>
+                            <button data-flavor="spicy" data-text="Spicy Masala" style="border-color: red;"><img
+                                    src="https://png.pngtree.com/png-vector/20240528/ourmid/pngtree-3d-red-chili-on-transparent-background-png-image_12527152.png"
+                                    alt=""></button>
+                            <button data-flavor="original" data-text="Original" style="border-color: green;"><img
+                                    src="assets/bgremove/cori.PNG" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--=============== HOME ===============-->
+        <section class="home container">
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="assets/image/Turmeric.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">"TURMERIC POWDER"</h4>
+                                    <span class="home__details-subtitle">Haldi powder</span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#1 Organic Turmeric Powder</h3>
+                                <h1 class="home__title">Pure and <br> Potent<br> Spice.</h1>
+                                <P class="home__descripton">Discover the rich, vibrant flavor and numerous health
+                                    benefits of our Premium Turmeric Powder.
+                                    Sourced from the finest turmeric roots, our powder is meticulously processed to
+                                    retain its natural goodness and potency.</P>
+
+
+                                <div class="home__buttons">
+                                    <a href="#" class="button">Buy Now</a>
+                                    <a href="#" class="button--link button--flex">View details <i
+                                            class="bx bx-right-arrow-alt button__icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="assets/bgremove/blank_pepper.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">"Black Pepper"</h4>
+                                    <span class="home__details-subtitle">Kaalee mirch</span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#2 Robust Flavor and Aroma for All Your Culinary Needs</h3>
+                                <h1 class="home__title">Finest <br>Whole Black <br>Peppercorns</h1>
+                                <P class="home__descripton">Discover the bold and aromatic essence of our Finest Whole Black Peppercorns. 
+                                    Handpicked from the best pepper vines, these peppercorns offer a rich, spicy flavor that enhances any dish.</P>
+
+
+                                <div class="home__buttons">
+                                    <a href="details.html" class="button">Buy Now</a>
+                                    <a href="details.html" class="button--link button--flex">View details <i
+                                            class="bx bx-right-arrow-alt button__icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="assets/image/Coriander.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">"CORIANDER POWDER"</h4>
+                                    <span class="home__details-subtitle">Dhaniya powder</span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#3 Fresh, Fragrant, and Flavorful Spice for All Cuisines</h3>
+                                <h1 class="home__title"> Whole Coriander <br>Seeds</h1>
+                                <P class="home__descripton">Unlock the aromatic and slightly citrusy flavor of our
+                                    Aromatic Whole Coriander Seeds.
+                                    Handpicked from the best farms, these seeds are perfect for enhancing the taste of
+                                    your dishes with a subtle yet distinctive spice.</P>
+
+
+                                    <div class="home__buttons">
+                                        <a href="#" class="button">Buy Now</a>
+                                        <a href="#" class="button--link button--flex">View details <i
+                                                class="bx bx-right-arrow-alt button__icon"></i></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="assets/image/Red chili.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">"RED CHILLI POWDER"</h4>
+                                    <span class="home__details-subtitle">laal mirch powder</span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#4 Bold Heat and Flavor for Culinary Adventures </h3>
+                                <h1 class="home__title">Fiery <br>Red Chilli<br>Powder</h1>
+                                <P class="home__descripton">Ignite your taste buds with our Fiery Red Chilli Powder.
+                                    Carefully sourced from the most vibrant and flavorful red chillies, this spice
+                                    brings intense heat and a deep, rich color to your dishes. </P>
+
+                                    <div class="home__buttons">
+                                        <a href="#" class="button">Buy Now</a>
+                                        <a href="#" class="button--link button--flex">View details <i
+                                                class="bx bx-right-arrow-alt button__icon"></i></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                   
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="assets/bgremove/Aroma_Laung.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">"Cloves"</h4>
+                                    <span class="home__details-subtitle">Laung </span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#5 Exquisite Whole Cloves for Enhanced Flavor and Aroma </h3>
+                                <h1 class="home__title">Aroma <br>Premium<br>(Cloves)</h1>
+                                <P class="home__descripton">Discover the intense aroma and robust flavor of our Aroma Premium Laung (Cloves). 
+                                    Handpicked from the finest clove plantations, these whole cloves are meticulously dried to preserve their natural oils and potency. </P>
+
+
+                                    <div class="home__buttons">
+                                        <a href="#" class="button">Buy Now</a>
+                                        <a href="#" class="button--link button--flex">View details <i
+                                                class="bx bx-right-arrow-alt button__icon"></i></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="assets/bgremove/SCMFT7N7VSZHF.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">"Green Cardamom"</h4>
+                                    <span class="home__details-subtitle">Haree Ilaayachee</span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#6 Aromatic and Flavorful Spice for Culinary Delights</h3>
+                                <h1 class="home__title">Whole Green<br>Cardamom<br>Pods. </h1>
+                                <P class="home__descripton">Discover the exquisite aroma and rich flavor of our Premium Whole Green Cardamom Pods. Handpicked from the finest sources,
+                                     our cardamom pods are packed with a sweet, spicy, and slightly citrusy taste, perfect for enhancing both sweet and savory dishes.. </P>
+
+
+                                     <div class="home__buttons">
+                                        <a href="#" class="button">Buy Now</a>
+                                        <a href="#" class="button--link button--flex">View details <i
+                                                class="bx bx-right-arrow-alt button__icon"></i></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+       
+        <!--=============== NEW ARRIVALS ===============-->
+        <section class="new section">
+            <h2 class="section__title">New Arrivals</h2>
+
+            <style>
+                :root {
+                    --primary: #000000;
+                    --white: #ffffff;
+                    --bg: #ffffff;
+                    --text-color: #000000;
+                    --secondary-text-color: #000000;
+                }
+
+                .containercard {
+                    font-size: 1rem;
+                    max-width: 70rem;
+                    padding: 0 0rem;
+                    margin: 0 auto;
+                }
+
+                .text-center {
+
+                    text-align: center;
+                }
+
+                .section-heading {
+                    font-size: 3rem;
+                    color: var(--primary);
+                    padding: 0.3rem 0;
+                }
+
+                #tranding {
+                    font-size:100%;
+                    font-family: "Montserrat", sans-serif;
+                    scroll-behavior: smooth;
+                    padding: 1rem 0;
+                }
+
+                .tranding-slide {
+                    width: 20rem;
+                    height: 20rem;
+                    position: relative;
+                    float: left;
+                    margin: 1rem;
+                    transition: transform 0.3s ease, background 0.3s ease;
+                }
+
+                .tranding-slide .tranding-slide-img {
+                    position: relative;
+                }
+
+                .tranding-slide .tranding-slide-img img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 2rem;
+                    object-fit: cover;
+                    display: block;
+                    animation: float 3s ease-in-out infinite;
+                }
+
+                @keyframes float {
+
+                    0%,
+                    100% {
+                        transform: translateY(0);
+                    }
+
+                    50% {
+                        transform: translateY(-15px);
+                    }
+                }
+
+                .tranding-slide .tranding-slide-img::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    width: 54%;
+                    height: 15px;
+                    background: rgba(0, 0, 0, 0.2);
+                    border-radius: 50%;
+                    transform: translateX(-50%);
+                    animation: shadowFloat 3s ease-in-out infinite;
+                }
+
+                @keyframes shadowFloat {
+
+                    0%,
+                    100% {
+                        transform: translateX(-50%) scale(1);
+                    }
+
+                    50% {
+                        transform: translateX(-50%) scale(1.2);
+                    }
+                }
+
+                .tranding-slide .tranding-slide-content {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    color: var(--white);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+
+                .tranding-slide-content .food-price {
+                    position: absolute;
+                    top: 0.1rem;
+                    right: 50%;
+                    transform: translateX(50%);
+                    color: var(--text-color);
+                }
+
+                .tranding-slide-content .tranding-slide-content-bottom {
+                    position: absolute;
+                    bottom: 1rem;
+                    color: var(--white);
+                }
+
+                .swiper-slide-shadow-left,
+                .swiper-slide-shadow-right {
+                    display: none;
+                }
+
+                .tranding-slider-control {
+                    position: relative;
+                    bottom: 0.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .tranding-slider-control .swiper-button-next {
+                    right: 2rem;
+                }
+
+                /* @media (max-width: 990px) {
+                            .tranding-slider-control .swiper-button-next {
+                                right: 1rem;
+                            }
+                        }
+    
+                        @media (max-width: 450px) {
+                            .tranding-slider-control .swiper-button-next {
+                                right: 0.5rem;
+                            }
+                        }
+    
+                        .tranding-slider-control .swiper-button-prev {
+                            left: 2rem;
+                        }
+    
+                        @media (max-width: 990px) {
+                            .tranding-slider-control .swiper-button-prev {
+                                left: 1rem;
+                            }
+                        }
+    
+                        @media (max-width: 450px) {
+                            .tranding-slider-control .swiper-button-prev {
+                                left: 0.5rem;
+                            }
+                        } */
+
+                .tranding-slider-control .slider-arrow {
+                    background: var(--white);
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    border-radius: 50%;
+                    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+                }
+
+                .tranding-slider-control .slider-arrow ion-icon {
+                    font-size: 2rem;
+                    color: #222224;
+                }
+
+                .tranding-slider-control .slider-arrow::after {
+                    content: '';
+                }
+
+                .tranding-slider-control .swiper-pagination {
+                    position: relative;
+                    width: 15rem;
+                    bottom: 1rem;
+                }
+
+                .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+                    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+                }
+
+                .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+                    background: var(--primary);
+                }
+
+                /* h1,
+                        h2,
+                        h3,
+                        h4,
+                        h5,
+                        h6,
+                        p,
+                        a,
+                        span,
+                        li {
+                            color: var(--text-color);
+                        }
+    
+                        a {
+                            color: var(--primary);
+                        }
+    
+                        .secondary-text {
+                            color: var(--secondary-text-color);
+                        } */
+                /* 
+                        @media (min-width: 1440px) {
+                            html {
+                                zoom: 1.3;
+                                
+                            }
+                        }
+    
+                        @media (min-width: 2560px) {
+                            html {
+                                zoom: 1.5;
+                               
+                            }
+                        }
+    
+                        @media (min-width: 3860px) {
+                            html {
+                                zoom: 2.0;
+                               
+                            }
+                        } */
+            </style>
+            <section id="tranding">
+
+                <div class="containercard">
+                    <div class="swiper tranding-slider">
+                        <div class="swiper-wrapper">
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <img src="assets/image/almonds.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                    <h1 class="food-price">₹500</h1>
+                                    <div class="tranding-slide-content-bottom">
+                                        <h2 class="food-name">
+                                            Almonds
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <img src="assets/image/makhana.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                    <h1 class="food-price">₹170</h1>
+                                    <div class="tranding-slide-content-bottom">
+                                        <h2 class="food-name">
+                                            Makhana
+                                        </h2>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <img src="assets/image/pista.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                    <h1 class="food-price">₹620</h1>
+                                    <div class="tranding-slide-content-bottom">
+                                        <h2 class="food-name">
+                                            Pista
+                                        </h2>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <img src="assets/image/cashew.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                    <h1 class="food-price">₹430</h1>
+                                    <div class="tranding-slide-content-bottom">
+                                        <h2 class="food-name">
+                                            Cashew
+                                        </h2>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <img src="assets/image/raisins.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                    <h1 class="food-price">₹154</h1>
+                                    <div class="tranding-slide-content-bottom">
+                                        <h2 class="food-name">
+                                            Green Raisins
+                                        </h2>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <img src="assets/image/walnut.png" alt="Tranding">
+                                </div>
+                                <div class="tranding-slide-content">
+                                    <h1 class="food-price">₹400</h1>
+                                    <div class="tranding-slide-content-bottom">
+                                        <h2 class="food-name">
+                                            Walnut Kernels
+                                        </h2>
+
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                        <div class="tranding-slider-control">
+                            <div class="swiper-button-prev slider-arrow">
+                                <ion-icon name="arrow-back-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-button-next slider-arrow">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="bx bxs-shopping-bags footer__logo-icon"></i> e-shopper
+                </a>
+                <p class="footer__description">Enjoy the Biggest sale <br> of your life. </p>
+
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"> <i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="footer__social-link"> <i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="footer__social-link"> <i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">About</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">About Us</a></li>
+                    <li><a href="#" class="footer__link">Customer support</a></li>
+                    <li><a href="#" class="footer__link">Support center</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Services</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Shop</a></li>
+                    <li><a href="#" class="footer__link">Discounts</a></li>
+                    <li><a href="#" class="footer__link">Shipping mode</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer__content">
+                <h3 class="footer__title">Our Company</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link"> Register</a></li>
+                    <li><a href="#" class="footer__link">Contact Us</a></li>
+                    <li><a href="#" class="footer__link">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <span class="footer__copy">&#169; @KillerX group . All right resserved</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+    <!--=============== STYLE SWITCHER ===============-->
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>
